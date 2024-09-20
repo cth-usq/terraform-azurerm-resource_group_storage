@@ -1,8 +1,8 @@
-Copyterraform {
+terraform {
   required_providers {
     azurerm = {
       source  = "hashicorp/azurerm"
-      version = "~> 2.0"
+      version = "1.0.0"
     }
   }
 }
@@ -16,7 +16,7 @@ module "resource_group_storage" {
   version = "1.0.0"
 
   resource_group_name  = "my-resource-group"
-  location             = "East US"
+  location             = "West Europe"
   storage_account_name = "mystorageaccount"
 }
 
